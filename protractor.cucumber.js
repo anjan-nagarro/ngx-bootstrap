@@ -31,7 +31,10 @@ exports.config = {
   ],
 
   cucumberOpts: {
-    require: ['./demo/e2e/step_definitions/*.steps.ts']
+    require: [
+      './demo/e2e-bdd/step_definitions/*.steps.ts',
+      './demo/e2e-bdd/support/*.ts'
+    ]
   },
 
   onPrepare: () => {
